@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.bar {
+  height: 60px;
+}
+
+.red {
+  color: #fbfffd;
+  background-color: #ffc731;
+  text-align: center;
+}
+
+.media {
+  border: 1px solid #e7e7eb;
+  padding: 10px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
