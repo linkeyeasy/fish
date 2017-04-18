@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+<!--本项目描述性内容-->
+# 配置文件
 
-You can use the [editor on GitHub](https://github.com/linkeyeasy/fish/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## editorconfig
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> `.editorconfig` 配置基本的文本格式
+>
+> 如：
+>
+> `js`、`css`、`json` 配置2个空格
+>
+> `python` 配置4个空格
+>
 
-### Markdown
+## setup.cfg
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> 配置`flake8`、`isort`等内容
+>
 
-```markdown
-Syntax highlighted code block
+### `isort` 安装
 
-# Header 1
-## Header 2
-### Header 3
+> pip install isort
 
-- Bulleted
-- List
+### `isort` 格式化import顺序
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```Shell
+# 根据本地配置文件`.isort.cfg`, `setup.cfg`
+isort -rc .
+isort -rc views
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### `vscode` 安装 isort 插件
 
-### Jekyll Themes
+> 快捷键 `shift + cmd + p` 打开命令行
+>
+> 直接输入`isort` 即可格式化本编辑器下python文本
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/linkeyeasy/fish/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
