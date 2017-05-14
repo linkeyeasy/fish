@@ -105,6 +105,7 @@ def sync_users():
     for openid in user_info.data['openid']:
         info = api.get_user_info(openid)
         info['openid'] = openid
+        info['subscribe_time'] = datetime.fromtimestamp(info.subscribe_time)
         user = User.get_by_openid(openid)
         if user:
             User.update(**info)

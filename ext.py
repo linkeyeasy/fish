@@ -21,7 +21,7 @@ db = SQLAlchemy(metadata=metadata)
 def create_app(debug=False):
     app = Flask(__name__)
     app.config[
-        'SQLALCHEMY_DATABASE_URI'] = 'mysql://haoguihua:haoguihua@localhost/wx_web'
+        'SQLALCHEMY_DATABASE_URI'] = 'mysql://root:haoguihua@127.0.0.1/fish'
 
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = debug
 
